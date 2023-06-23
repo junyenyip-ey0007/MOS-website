@@ -1,0 +1,85 @@
+#pillar-map {
+    min-height: 100vh;
+    color: #fff;
+    padding: 50px 0;
+}
+
+.pcontainer {
+    padding: 20px;
+    margin: auto;
+}
+
+#pillar-h h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.image-hotspot {
+    margin: 50px auto 0 auto;
+    position: relative;
+}
+
+.image-hotspot img {
+    width: 100%;
+    box-shadow: 0 0 14px 0 rgb(0, 0, 0, 50%);
+}
+
+.icon {
+    /* width: 30px;
+    height: 30px; */
+    background: transparent;
+    cursor: pointer;
+    z-index: -2;
+}
+
+.icon::after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1, 1);
+    pointer-events: none;
+    content: "";
+    display: block;
+    width: 45px;
+    height: 45px;
+    border-radius: 100%;
+    border: 1.5px solid rgb(0, 255, 255);
+    transition: border-color 1s linear;
+    animation: icon-pulse 2s linear infinite;
+}
+
+@keyframes icon-pulse {
+    0% {
+        transform: translate(-50%, -50%) scale(1, 1);
+        opacity: 0;
+    }
+    40% {
+        transform: translate(-50%, -50%) scale(1.5, 1.5);
+        opacity: 0.9;
+    }
+    60% {
+        transform: translate(-50%, -50%) scale(2, 2);
+        opacity: 0;
+    }
+    100% {
+        transform: translate(-50%, -50%) scale(3, 3);
+        opacity: 0;
+    }
+}
+
+.item {
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+
+
+/* @media only screen and (max-width:600px) {
+
+} */
+
+@media only screen and (min-device-width: 320px) and (max-device-width:480px) {
+    #pillar-h h1 {
+        font-size: 2em;
+    }
+}

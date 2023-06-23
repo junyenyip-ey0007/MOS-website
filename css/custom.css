@@ -1,0 +1,21 @@
+img.logo {
+    width: 100px;
+    float: left;
+}
+
+.popupTrigger.videoThumbnail.shadow.rounded {
+    border: 5px solid #3c6266;
+}
+
+/* .flex>.col-6-12 {
+    width: 35% !important;
+} */
+
+p,
+.p,
+blockquote {
+    font-size: 19px !important;
+    line-height: 1.6363636364;
+    margin-bottom: 30px;
+    font-weight: 300;
+}
